@@ -1,0 +1,22 @@
+<h2>Course npList</h2>
+<table class="table table-striped">
+    <thead>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Code</th>
+        <th>Rating</th>
+        <th>Options</th>
+    </thead>
+    <tbody>
+        <!--Iteração no Angular:-->
+        <tr *ngFor="let course of courses">
+            <th>{{ course.imageUrl }}</th>
+            <th>{{ course.name }}</th>
+            <th>{{ course.price }}</th>
+            <th>{{ course.code }}</th>
+            <th>{{ course.rating }}</th>
+            <th></th>
+        </tr>
+    </tbody>
+</table>
