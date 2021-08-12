@@ -6,7 +6,7 @@ import { CourseService } from './course.service';
 //Informa que é um componente:
 @Component({
     //Características do componente:
-    selector: 'app-course-list',
+    //Selector: 'app-course-list' removido, pois agora usa rotas via app.module.ts
     templateUrl: './course-list.component.html',
 })
 

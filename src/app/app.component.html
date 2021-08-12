@@ -6,7 +6,11 @@
 <!--2Way Databind:-->
 <input [(ngModel)]='name' name='name'>
 
+<!--Router nav bar:-->
+<app-nav-bar></app-nav-bar>
+
 <!--Usando Css Bootstrap:-->
-<div class='container'>
-    <app-course-list></app-course-list>
+<div class="container mt-4">
+    <!--removido <app-course-list></app-course-list> para uso via rota no app.module.ts-->
+    <router-outlet></router-outlet>
 </div>
