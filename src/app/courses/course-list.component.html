@@ -1,4 +1,13 @@
-<h2>Course npList</h2>
+<h2>Course List</h2>
+
+<div class = "form-goup row">
+    <label class="col-sm-2 col-from-label">Filter By:</label>
+    <div class="col-sm-10">
+        <!--ngModel does the 2WayDataBiding-->
+        <input [(ngModel)]="filter" class="form-control">
+    </div>
+</div>
+
 <table class="table table-striped">
     <thead>
         <th>Image</th>
@@ -10,7 +19,7 @@
     </thead>
     <tbody>
         <!--Iteração no Angular:-->
-        <tr *ngFor="let course of courses">
+        <tr *ngFor="let course of filteredCourses">
             <!--Tag precisa estar entre colchetes para definir que é uma variável   -->
             <th><img [src]="course.imageUrl" width=40.5px height=40.5px></th>
             <th>{{ course.name }}</th>
