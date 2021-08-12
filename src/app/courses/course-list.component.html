@@ -14,6 +14,7 @@
         <th>Name</th>
         <th>Price</th>
         <th>Code</th>
+        <th>Release Date</th>
         <th>Rating</th>
         <th>Options</th>
     </thead>
@@ -24,7 +25,9 @@
             <th><img [src]="course.imageUrl" width=40.5px height=40.5px></th>
             <th>{{ course.name }}</th>
             <th>{{ course.price }}</th>
-            <th>{{ course.code }}</th>
+            <!-- Usando pipe do diretório pipe para substituir - por nada-->
+            <th>{{ course.code | lowercase | replace: '-':' '}}</th>
+            <th>{{ course.releaseDate | date: 'dd/MM/yyyy'}}</th>
             <th>
                 <app-star [rating]="course.rating"></app-star>
             </th>
