@@ -31,7 +31,10 @@
             <th>
                 <app-star [rating]="course.rating"></app-star>
             </th>
-            <th></th>
+            <th>
+                <!--URL das rotas-->
+                <a [routerLink]="['/courses/info',course.id]" class="btn btn-primary">Edit</a>
+            </th>
         </tr>
     </tbody>
 </table>
