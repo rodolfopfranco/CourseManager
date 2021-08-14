@@ -12,12 +12,14 @@ import { CourseInfoComponent } from './courses/course-info.component';
 
 @NgModule({
   declarations: [
+    //Todo novo componente precisa ser informdo nestes colchetes
     AppComponent,
     CourseListComponent,
     StarComponent,
     ReplacePipe,
     NavBarComponent,
-    Error404Component
+    Error404Component,
+    CourseInfoComponent
   ],
   imports: [
     BrowserModule,
